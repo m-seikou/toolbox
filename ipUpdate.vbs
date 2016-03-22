@@ -31,7 +31,8 @@ Dim oXMLHTTP   ' MSXMLオブジェクト
 Dim oStream    ' ADODB.Streamオブジェクト
 Dim resData    ' レスポンス
 
+WScript.Echo "http://www.mydns.jp/directip.html?MID=" & MYDNS_ID & "&PWD=" & MYDNS_PWD & "&IPV4ADDR=" & ipAddress
 Set oXMLHTTP = CreateObject("MSXML2.XMLHTTP.3.0")
-oXMLHTTP.Open "GET", "http://www.mydns.jp/directip.html?MID=" & MYDNS_MID & "&PWD=" & MYDNS_PWD & "&IPV4ADDR=" & ipAddress, False
+oXMLHTTP.Open "GET", "http://www.mydns.jp/directip.html?MID=" & MYDNS_ID & "&PWD=" & MYDNS_PWD & "&IPV4ADDR=" & ipAddress, False
 oXMLHTTP.Send
 
