@@ -4,8 +4,7 @@ class DH
 {
 	const BASE = 16;
 
-	/** @todo set large prime number (hex) */
-	const DEFAULT_P = '0d';
+	const DEFAULT_P = 'ffffffffffffffffffffffffffffff61';
 
 	/**
 	 * @var GMP 大きな素数
